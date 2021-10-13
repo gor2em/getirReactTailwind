@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,600;0,800;1,500;1,600;1,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
+@layer base {
+  html,
+  body {
+    font-family: "Open Sans", sans-serif;
+    @apply antialiased;
+  }
+}
+
+.flag-select button {
+  @apply h-14 border-2 border-gray-200 focus:border-primary-brand-color transition-colors
+}
+
+.flag-select button > span span:nth-child(2) {
+  @apply text-sm pl-2;
+}

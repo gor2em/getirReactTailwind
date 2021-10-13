@@ -1,4 +1,4 @@
-import Header from "components/Header";
+import Header from "./components/Header";
 import HeroSection from "components/HeroSection";
 import Categories from "components/Categories";
 import Campaigns from "components/Campaigns";
@@ -9,7 +9,7 @@ import Footer from "components/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header/>
       <HeroSection/>
       <Categories/>
@@ -18,7 +18,7 @@ function App() {
       <MobileApp/>
       <Cards/>
       <Footer/>
-    </div>
+    </>
   );
 }
 
