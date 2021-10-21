@@ -12,7 +12,7 @@ export default function Favorites() {
   return (
     <div>
       <Title>Favoriler</Title>
-      <div className="grid grid-cols-8 bg-white">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 2xl:grid-cols-8 bg-white">
         {favorites &&
           favorites.map((favorite, index) => (
             <Favorite key={index} favorite={favorite} />
